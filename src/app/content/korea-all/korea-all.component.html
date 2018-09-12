@@ -1,0 +1,30 @@
+<p>
+  korea-all works!
+</p>
+<h2>센터현황</h2>
+<div class="table-responsive">
+  <table class="table table-striped table-sm">
+    <thead>
+      <tr>
+        <th>No.</th>
+        <th>구분</th>
+        <th>지역코드</th>
+        <th>지역등록명</th>
+        <th>이름</th>
+        <th>성별</th>
+        <th>나이</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let person of people.data; first as isF; index as i">
+        <td>{{i+1}}</td>
+        <td>{{person.gubun}}</td>
+        <td>{{person.local_code}}</td>
+        <td>{{person.local_name}}</td>
+        <td>{{person.user_name}}</td>
+        <td>{{person.gender}}</td>
+        <td>{{person.user_age}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
